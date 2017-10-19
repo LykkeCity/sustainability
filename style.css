@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+.body {
+  margin: 0;
+}
+.hero-background {
+  height: 80vh;
+  background-color: #000;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.hero-content-container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 100%;
+}
+.hero-text {
+  color: #fff;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 45px;
+  width: 50%;
+  display: flex;
+}
+.hero-subtitle {
+  text-transform: capitalize;
+  font-size: 14px;
+  width: 50%;
+  text-align: right;
+  color: #888;
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 1em;
+}
+.lykke-logo-container {
+  display:flex;
+  justify-content: space-around;
+  padding: 2rem;
+  align-items:center;
+  height:20vh;
+}
+.page-section-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-flow: column;
+}
+.page-section {
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  width: 50%;
+  flex-flow: column;
+}
+.page-section p {
+  padding-bottom: 3rem;
+  font-size: 24px;
+}
