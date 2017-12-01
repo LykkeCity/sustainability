@@ -2,46 +2,98 @@
   margin: 0;
   box-sizing: border-box;
 }
-.body {
+body {
   margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
 }
+a {
+  color: #333;
+}
+/*------------------
+  HERO
+------------------*/
 .hero-background {
-  height: 80vh;
+  height: 50vh;
   background-color: #000;
+  padding: 2rem;
+  background-image: url('img/homepage-hero.jpg');
   display: flex;
   flex-flow: column;
-  align-items: center;
-  justify-content: space-around;
+  background-size: cover;
+  margin-bottom: 3rem;
+}
+
+.people-background {
+  background-image: url('img/crowd.jpg');
+  color: #FFF;
+}
+.planet-background {
+  background-image: url('img/mountain.jpg');
 }
 .hero-content-container {
   display: flex;
   flex-flow: column;
   align-items: center;
   width: 100%;
+  flex-grow: 1;
+  justify-content: space-around;
 }
 .hero-text {
-  color: #fff;
-  font-family: 'Libre Baskerville', serif;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
   font-size: 45px;
-  width: 50%;
+  width: 60%;
   display: flex;
+  font-weight: 700;
+  flex-flow: column;
 }
 .hero-subtitle {
   text-transform: capitalize;
   font-size: 14px;
   width: 50%;
   text-align: right;
-  color: #888;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   padding-top: 1em;
+  font-weight: 400;
+  padding-right: 4rem;
+  align-self: flex-end;
 }
+
+
+/*------------------
+  HEADER
+------------------*/
+
+.header {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+.header-menu {
+  display: flex;
+  flex-flow: row;
+  flex-grow: 1;
+justify-content: flex-end;
+}
+.header-menu a {
+  text-decoration: none;
+  padding: 1rem 2rem;
+  font-weight: 400;
+  font-size: 20px;
+}
+
 .lykke-logo-container {
-  display:flex;
-  justify-content: space-around;
-  padding: 2rem;
-  align-items:center;
-  height:20vh;
+  width: 20%;
 }
+
+.underline {
+  text-decoration: underline;
+}
+/*------------------
+  BODY
+------------------*/
+
 .page-section-container {
   display: flex;
   align-items: center;
@@ -49,12 +101,56 @@
   flex-flow: column;
 }
 .page-section {
-  font-family: 'Open Sans', sans-serif;
   display: flex;
   width: 50%;
   flex-flow: column;
 }
 .page-section p {
-  padding-bottom: 3rem;
-  font-size: 24px;
+  padding-bottom: 2rem;
+  font-size: 18px;
+}
+.page-section p:last-child {
+  padding-bottom: 0;
+}
+.button {
+  display: inline-block;
+  line-height: 48px;
+  max-width: 205px;
+  width: 100%;
+  font-size: 1rem;
+  padding: 0 10px;
+  border: 0;
+  outline: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+  height: 48px;
+  overflow: hidden;
+  background-color: #3f8db2;
+  color: #fff;
+  margin: auto;
+}
+.button-right {
+  margin-right: 0;
+  margin-left: auto;
+}
+.button a {
+  text-decoration: none;
+  color: #FFF;
+}
+/*------------------
+  FOOTER
+------------------*/
+footer {
+  padding: 2rem;
+  text-align: center;
+  font-size: 14px;
+  color: #FFF;
+  background-color: #333;
+  margin-top: 3rem;
+}
+.footer-title {
+  font-size: 18px;
+  margin-bottom: .5rem;
 }
