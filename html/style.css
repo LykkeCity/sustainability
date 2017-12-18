@@ -10,6 +10,8 @@ body {
 a {
   color: #333;
 }
+
+
 /*------------------
   HERO
 ------------------*/
@@ -17,19 +19,39 @@ a {
   height: 50vh;
   background-color: #000;
   padding: 2rem;
-  background-image: url('img/homepage-hero.jpg');
+  background-image: url('img/alps.jpg');
   display: flex;
   flex-flow: column;
   background-size: cover;
   margin-bottom: 3rem;
 }
 
+@media(max-width: 600px) {
+  .hero-background {
+    height: 20vh;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
 .people-background {
-  background-image: url('img/crowd.jpg');
+  background-image: url('img/people.jpg');
   color: #FFF;
+
 }
 .planet-background {
-  background-image: url('img/mountain.jpg');
+  background-image: url('img/forest.jpg');
+   color: #FFF;
+}
+.planet-background nav {
+  color: #333;
+}
+.profit-background {
+  background-image: url('img/stones2.jpg');
+  color: #FFF;
+}
+.peace-background {
+  background-image: url('img/clouds.jpg');
 }
 .hero-content-container {
   display: flex;
@@ -48,6 +70,12 @@ a {
   font-weight: 700;
   flex-flow: column;
 }
+@media(max-width: 600px) {
+  .hero-text {
+    width: 90%;
+    font-size: 30px;
+  }
+}
 .hero-subtitle {
   text-transform: capitalize;
   font-size: 14px;
@@ -59,7 +87,12 @@ a {
   padding-right: 4rem;
   align-self: flex-end;
 }
-
+@media(max-width: 600px) {
+  .hero-subtitle {
+    display: none;
+  }
+  
+}
 
 /*------------------
   HEADER
@@ -82,11 +115,28 @@ justify-content: flex-end;
   font-weight: 400;
   font-size: 20px;
 }
-
+@media(max-width: 600px) {
+  .header-menu {
+    display: none;
+  }
+}
+.white-menu a {
+  color: #FFF;
+}
 .lykke-logo-container {
   width: 20%;
 }
-
+.lykke-logo img {
+  height: 60px 
+}
+@media(max-width: 600px) {
+  .lykke-logo-container {
+    width: 80%;
+  }
+  .lykke-logo img {
+    height: 30px;
+  }
+}
 .underline {
   text-decoration: underline;
 }
@@ -105,9 +155,19 @@ justify-content: flex-end;
   width: 50%;
   flex-flow: column;
 }
+@media(max-width: 600px) {
+  .page-section {
+    width: 90%;
+  }
+}
 .page-section p {
   padding-bottom: 2rem;
   font-size: 18px;
+}
+@media(max-width: 600px) {
+  .page-section p {
+    font-size: 16px;
+  }
 }
 .page-section p:last-child {
   padding-bottom: 0;
@@ -135,6 +195,11 @@ justify-content: flex-end;
   margin-right: 0;
   margin-left: auto;
 }
+@media(max-width: 600px) {
+  .button-right {
+    margin-right: auto;
+  }
+}
 .button a {
   text-decoration: none;
   color: #FFF;
@@ -150,7 +215,35 @@ footer {
   background-color: #333;
   margin-top: 3rem;
 }
+.footer-contacts {
+   display: flex;
+   padding-bottom: 1rem;
+}
+.footer-contact-entry {
+  width: 100%;
+}
 .footer-title {
-  font-size: 18px;
-  margin-bottom: .5rem;
+  font-size: 24px;
+  margin-bottom: 1rem;
+}
+@media(max-width: 600px) {
+  .footer-contacts {
+    flex-flow: column;
+  } 
+}
+@media(max-width: 600px) {
+  .footer-contact-entry {
+    margin-bottom: 1rem;
+  }  
+}
+
+@media(max-width: 600px) {
+  .large-only {
+    display: none;
+  }  
+}
+@media(min-width: 600px) {
+  .small-only {
+    display: none;
+  }  
 }
